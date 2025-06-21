@@ -75,18 +75,26 @@ Update the following in `main.c` or via `menuconfig`:
 * Certificate (embedded in binary)
 
 ## 📂 Project Structure
-
 ```
+
 ChronoSentinel/
 ├── main/
+│   ├── CMakeLists.txt
+│   ├── Kconfig.projbuild
+│   ├── ble\_prox\_cent.h
+│   ├── idf\_component.yml
 │   ├── main.c
-│   ├── time_sync.c
-│   ├── certs/
-│   │   └── server_cert.pem
+├── .gitignore
 ├── CMakeLists.txt
 ├── README.md
-└── sdkconfig
+├── dependencies.lock
+├── sdkconfig
+├── sdkconfig.defaults
+└── sdkconfig.old
+
 ```
+
+
 
 ## 🧠 Behind the Name
 
